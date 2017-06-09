@@ -1,17 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
-        </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
-        </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+<head> 
+</head>
+<body>
+
+<form action="form_process.php" method="post" name="contact_form">
+<p>
+First Name:
+<input type="text" name="first_name" />
+</p>
+<p>
+Last Name:
+<input type="text" name="last_name" />
+</p>
+<p>
+E-mail:
+<input type="text" name="email" />
+</p>
+<p>
+	your message here:
+	<textarea name="message"></textarea>
+</p>
+<p>
+	<input type="submit" name="submit" value="submit" />
+</p>
+
+<p>
+	<input type="reset" name="reset" value="reset" />
+</p>
+</form>
+</body>
 </html>
